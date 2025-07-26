@@ -1,0 +1,15 @@
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+#templateSuggestions .template-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+}
+
+#templateSuggestions .template-card:hover {
+    transform: translateY(-5px);
+}
