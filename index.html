@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResumeCraft AI</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <div class="container mx-auto p-4">
+        <header class="flex items-center justify-between py-4">
+            <img src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-eeM7RLe3Wv2HZ7Toub47POas/user-rnGwZEmjnwoUoF8lEvadvt0O/img-KZzWN9AKonZA1plsoj0AkfLf.png?st=2025-07-26T01%3A13%3A47Z&se=2025-07-26T03%3A13%3A47Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=cc612491-d948-4d2e-9821-2683df3719f5&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-07-25T18%3A55%3A49Z&ske=2025-07-26T18%3A55%3A49Z&sks=b&skv=2024-08-04&sig=qOUfgLAKUJf2EBVlBVzFeZB6y7nbp2pYhqlYjiKIPng%3D" alt="Logo" class="h-12">
+            <h1 class="text-2xl font-bold text-blue-600">ResumeCraft AI</h1>
+        </header>
+
+        <main class="mt-8">
+            <h2 class="text-xl font-semibold">Crafting Your Future, One Resume at a Time</h2>
+            <div class="mt-6 bg-white shadow rounded-lg p-6">
+                <form id="resume-form" class="grid grid-cols-1 gap-6">
+                    <div>
+                        <label for="jobTitle" class="block text-sm font-medium text-gray-700">Job Title</label>
+                        <input type="text" id="jobTitle" name="jobTitle" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm">
+                    </div>
+                    <div>
+                        <label for="industry" class="block text-sm font-medium text-gray-700">Industry</label>
+                        <input type="text" id="industry" name="industry" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm">
+                    </div>
+                    <div>
+                        <label for="experienceLevel" class="block text-sm font-medium text-gray-700">Experience Level</label>
+                        <select id="experienceLevel" name="experienceLevel" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm">
+                            <option>Entry Level</option>
+                            <option>Mid Level</option>
+                            <option>Senior Level</option>
+                        </select>
+                    </div>
+                    <button type="button" id="generateTemplate" class="mt-4 bg-gradient-to-r from-blue-500 to-green-500 hover:from-blue-600 hover:to-green-600 text-white py-2 px-4 rounded-md">Generate Template</button>
+                </form>
+            </div>
+
+            <div id="templateSuggestions" class="mt-8 hidden">
+                <h3 class="text-lg font-medium text-gray-900">Template Suggestions</h3>
+                <p class="text-gray-600">Based on your inputs, here are some templates you might like:</p>
+                <!-- Template cards will be inserted here dynamically -->
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
